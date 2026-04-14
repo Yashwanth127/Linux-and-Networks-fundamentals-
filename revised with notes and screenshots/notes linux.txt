@@ -1,0 +1,206 @@
+Basic Linux Commands
+
+1) ls
+- Shows files and folders in the current directory.
+
+2) ls -a
+- Shows all files and folders, including hidden files.
+- Hidden files start with a dot (.) like .bashrc
+
+3) pwd
+- Prints the current working directory.
+- It tells you where you are in the system.
+
+4) cd
+- Change directory.
+- Used to move from one folder to another.
+- Examples:
+  cd Documents
+  cd ..
+  cd ~
+
+5) mkdir
+- Make directory.
+- Creates a new folder.
+- Example:
+  mkdir test
+
+6) touch
+- Creates an empty file.
+- Example:
+  touch file.txt
+
+7) rm
+- Removes files.
+- Example:
+  rm file.txt
+- Be careful, because deleted files may not go to trash.
+
+8) rmdir
+- Removes an empty directory only.
+- Example:
+  rmdir test
+
+9) rm -r
+- Removes a directory and everything inside it.
+- Example:
+  rm -r test
+- Be very careful with this command.
+
+10) cp
+- Copies files or folders.
+- Example:
+  cp file1.txt file2.txt
+- Means copy file1.txt to file2.txt
+
+11) mv
+- Moves files or folders.
+- Also used to rename files.
+- Examples:
+  mv file1.txt Documents/
+  mv oldname.txt newname.txt
+
+12) Hidden file
+- A file whose name starts with a dot (.).
+- Example:
+  .bashrc
+  .profile
+- Use ls -a to see them.
+
+13) /  ~  ..
+- / = root directory, the top of the Linux system.
+- ~ = your home directory.
+- .. = parent directory, one level up.
+
+14) Permission errors
+- Permission errors happen when you do not have write access to that folder.
+- Example: trying to create a folder in / usually gives permission denied.
+- Normal users can create files in their home folder, not in protected system folders.
+
+Important examples:
+- cd ~       -> go to home directory
+- pwd        -> show current location
+- mkdir demo -> create folder named demo
+- touch a.txt -> create empty file
+- ls -a      -> show all files including hidden files
+
+
+Practice:
+1. pwd
+2. ls
+3. ls -a
+4. cd ~
+5. mkdir practice
+6. cd practice
+7. touch note.txt
+8. ls
+9. cd ..
+10. rm -r practice
+
+
+
+
+Linux Basics and Interview Questions
+
+1) What is the difference between ls and ls -a?
+- ls shows files and folders in the current directory.
+- ls -a shows all files and folders, including hidden files.
+- Hidden files start with a dot (.).
+
+2) What does pwd do?
+- pwd means print working directory.
+- It shows your current location in the Linux file system.
+
+3) What is the use of cd?
+- cd means change directory.
+- It is used to move from one folder to another.
+- Examples:
+  cd Documents
+  cd ..
+  cd ~
+
+4) What is the difference between mkdir and touch?
+- mkdir creates a new directory or folder.
+- touch creates a new empty file.
+- Example:
+  mkdir test
+  touch file.txt
+
+5) What does rm do?
+- rm removes or deletes files.
+- Be careful because it can permanently delete files.
+
+6) What is the difference between rmdir and rm -r?
+- rmdir removes only empty directories.
+- rm -r removes directories with all files and subfolders inside them.
+- rm -r is powerful and dangerous if used carelessly.
+
+7) What is the purpose of cp and mv?
+- cp copies files or folders.
+- mv moves files or folders.
+- mv can also rename files.
+- Examples:
+  cp file1.txt file2.txt
+  mv oldname.txt newname.txt
+
+8) What is a hidden file in Linux?
+- A hidden file starts with a dot (.).
+- Example:
+  .bashrc
+  .profile
+- Use ls -a to see hidden files.
+
+9) What is the meaning of /, ~, and ..?
+- / means root directory, the top level of the Linux file system.
+- ~ means your home directory.
+- .. means parent directory, one level above the current directory.
+
+10) Why do permission errors happen in Linux?
+- Permission errors happen when you do not have rights to read, write, or execute a file or folder.
+- Example: trying to create a folder in / usually gives permission denied.
+- Normal users can work in their home folder, but protected system folders need special permission.
+
+11) What are file permissions in Linux?
+- File permissions control who can read, write, or execute a file.
+- They protect files and folders from unwanted access.
+
+12) What is the difference between user, group, and others?
+- user means the owner of the file.
+- group means users who belong to the same group.
+- others means everyone else.
+
+13) What does chmod do?
+- chmod changes file permissions.
+- Example:
+  chmod 755 file.sh
+- It controls read, write, and execute access.
+
+14) What does chown do?
+- chown changes the owner of a file or folder.
+- Example:
+  chown yash file.txt
+
+15) What is the root user?
+- The root user is the superuser in Linux.
+- It has full control over the system.
+- Root can change system files, permissions, and settings.
+
+16) What is the difference between absolute and relative path?
+- Absolute path starts from / and gives the full location.
+- Relative path starts from your current directory.
+- Examples:
+  /home/yc127/Documents
+  Documents/file.txt
+
+17) What is the use of sudo?
+- sudo means execute a command with superuser privileges.
+- It is used when normal permissions are not enough.
+- Example:
+  sudo apt update
+
+18) What is the difference between hard link and soft link?
+- A hard link points to the same file data.
+- A soft link (symbolic link) points to the file path.
+- If the original file is deleted:
+  - hard link still works.
+  - soft link breaks.
