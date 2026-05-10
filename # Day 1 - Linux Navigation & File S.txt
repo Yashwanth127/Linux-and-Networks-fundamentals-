@@ -1,0 +1,21 @@
+# Day 1 - Linux Navigation & File System
+
+## Commands Practiced
+
+pwd
+ls
+ls -l
+ls -a
+cd
+cd ..
+cd ~
+mkdir
+rmdir
+clear
+
+## What I Learned
+pwd shows current directory.
+ls lists files and folders.
+cd is used to move between directories.
+mkdir creates a folder.
+rmdir removes an empty folder.

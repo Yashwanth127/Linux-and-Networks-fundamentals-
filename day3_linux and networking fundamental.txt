@@ -1,0 +1,96 @@
+Linux and Networking Practice – Day 3
+
+Today I focused on learning basic networking concepts and practiced some Linux commands used to check network information and system activity. Networking knowledge is important because computers communicate with each other through networks, especially in cloud environments and server infrastructures.
+
+What is Computer Networking?
+
+Computer networking is the process of connecting multiple computers or devices together so they can communicate and share resources. Through networks, devices can send data, access the internet, and interact with servers.
+
+Examples of networks include home WiFi networks, office networks, campus networks, and the internet.
+
+Important Networking Concepts
+
+IP Address
+An IP address is a unique identifier assigned to each device connected to a network. It helps devices identify and communicate with each other.
+
+Example:
+192.168.1.10
+
+DNS (Domain Name System)
+DNS converts domain names into IP addresses so that computers can locate servers on the internet.
+
+Example:
+When we type google.com, DNS converts it to an IP address of Google's server.
+
+Router
+A router is a networking device that connects different networks and forwards data packets between them.
+
+Packet
+When data travels across a network, it is divided into smaller pieces called packets. These packets travel through different routes and are reassembled at the destination.
+
+Ports
+Ports are logical communication endpoints used by applications to send and receive data over the network.
+
+Example:
+HTTP uses port 80
+HTTPS uses port 443
+SSH uses port 22
+
+Linux Networking Commands Practiced
+
+ip a
+This command shows IP address and network interface information.
+
+Example:
+ip a
+
+ping
+The ping command checks connectivity between the system and another host.
+
+Example:
+ping google.com
+
+If the network is working, the system receives reply packets.
+
+ifconfig
+The ifconfig command displays network configuration information such as IP address and network interface details.
+
+Example:
+ifconfig
+
+netstat
+The netstat command shows network connections and open ports.
+
+Example:
+netstat -tuln
+
+traceroute
+The traceroute command shows the path that network packets take from the source system to the destination.
+
+Example:
+traceroute google.com
+
+nslookup
+The nslookup command is used to query DNS servers and find the IP address associated with a domain name.
+
+Example:
+nslookup google.com
+
+hostname
+The hostname command shows the name of the current system.
+
+Example:
+hostname
+
+Learning Summary
+
+Today I learned how networks work at a basic level and practiced several Linux networking commands that help check connectivity, DNS resolution, and network configuration. These commands are commonly used by system administrators and cloud engineers when troubleshooting network issues.
+
+Learning Focus
+
+Currently I am improving my fundamentals in:
+Linux
+Computer Networking
+Python programming
+
+These skills are part of my preparation for cloud and security related roles.

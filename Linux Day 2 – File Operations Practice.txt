@@ -1,0 +1,68 @@
+Today I practiced some basic Linux commands that are used to work with files in the terminal.
+
+Commands I practiced:
+
+touch
+cp
+mv
+rm
+cat
+nano
+head
+tail
+
+touch
+The touch command is used to create a new empty file.
+
+Example I tried:
+touch notes.txt
+
+This created a file named notes.txt.
+
+cp
+The cp command is used to copy a file.
+
+Example I tried:
+cp notes.txt copy_notes.txt
+
+This created another file which is a copy of the original file.
+
+mv
+The mv command is used to rename a file or move it to another location.
+
+Example:
+mv notes.txt new_notes.txt
+
+This renamed the file.
+
+rm
+The rm command is used to delete a file.
+
+Example:
+rm new_notes.txt
+
+This removed the file from the directory.
+
+cat
+The cat command is used to display the contents of a file in the terminal.
+
+Example:
+cat notes.txt
+
+nano
+nano is a simple text editor in Linux that allows us to create and edit files.
+
+Example:
+nano notes.txt
+
+head
+The head command shows the first few lines of a file.
+
+Example:
+head notes.txt
+
+tail
+The tail command shows the last lines of a file.
+
+Example:
+tail notes.txt

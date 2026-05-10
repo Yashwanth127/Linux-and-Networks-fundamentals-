@@ -1,0 +1,35 @@
+Day 1 - Linux Navigation & File System (Practiced / Revised Today)
+
+Date: 17-03-2026
+
+Commands practiced today:
+
+pwd
+ls
+ls -l
+ls -a
+cd
+cd ..
+cd ~
+mkdir
+rmdir
+clear
+
+# Extra commands practiced today (optional additions)
+touch filename.txt
+rm filename.txt
+cp file1.txt file2.txt
+mv oldname.txt newname.txt
+tree          # shows directory structure (if installed)
+
+What I learned today:
+- pwd shows the current directory.
+- ls lists files and folders.
+- ls -l shows detailed list, ls -a shows hidden files.
+- cd moves between directories, cd .. goes up one level, cd ~ goes to home.
+- mkdir creates a new directory.
+- rmdir removes an empty directory.
+- touch creates an empty file.
+- rm deletes a file.
+- cp copies a file, mv moves/renames a file.
+- clear cleans the terminal screen.

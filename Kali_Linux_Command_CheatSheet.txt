@@ -1,0 +1,129 @@
+------------------------------------------
+1. BASIC LINUX COMMANDS
+------------------------------------------
+pwd                     → Show current directory
+ls                      → List files and directories
+ls -l                   → List files with details
+ls -a                   → Show hidden files also
+cd <dir>                → Change directory
+cd ..                   → Go back one directory
+cd /                    → Go to root directory
+mkdir <name>            → Create a new directory
+rmdir <name>            → Remove an empty directory
+rm <file>               → Remove a file
+rm -rf <dir>            → Force delete folder with all contents
+cp <src> <dest>         → Copy file/folder
+mv <src> <dest>         → Move or rename file/folder
+cat <file>              → Display file content
+touch <file>            → Create an empty file
+clear                   → Clear the terminal screen
+whoami                  → Show current user
+history                 → Show previously used commands
+date                    → Display current date and time
+
+------------------------------------------
+2. FILE PERMISSIONS AND OWNERSHIP
+------------------------------------------
+chmod 755 <file>        → Give read/write/execute permission
+chmod +x <file>         → Add execute permission
+chown <user>:<group> <file> → Change file owner
+ls -l                   → Check file permissions
+
+------------------------------------------
+3. NETWORK COMMANDS
+------------------------------------------
+ifconfig                → Display network configuration
+ip a                    → Show IP details
+ping <website>          → Check connectivity
+netstat -tuln           → Show open ports
+nmap <IP>               → Scan target for open ports
+traceroute <site>       → Trace the route packets take
+curl <url>              → Fetch data from a website
+wget <url>              → Download file from URL
+
+------------------------------------------
+4. USER MANAGEMENT
+------------------------------------------
+adduser <username>      → Create a new user
+passwd <username>       → Change password
+deluser <username>      → Delete a user
+usermod -aG sudo <user> → Give sudo privileges
+who                     → Show logged-in users
+
+------------------------------------------
+5. PROCESS MANAGEMENT
+------------------------------------------
+ps aux                  → Show running processes
+top                     → Monitor processes live
+kill <PID>              → Kill process by PID
+killall <name>          → Kill all processes by name
+
+------------------------------------------
+6. PACKAGE MANAGEMENT (APT)
+------------------------------------------
+apt update              → Update package list
+apt upgrade             → Upgrade installed packages
+apt install <pkg>       → Install a package
+apt remove <pkg>        → Remove a package
+apt search <pkg>        → Search for a package
+apt list --installed    → List all installed packages
+dpkg -i <pkg.deb>       → Install .deb file manually
+
+------------------------------------------
+7. HACKING / SECURITY TOOLS
+------------------------------------------
+nmap <target>           → Network scanning
+sqlmap -u <url> --dbs   → Detect SQL injection
+hydra -l user -P pass.txt <target> ftp → Brute-force login
+airmon-ng               → Start monitor mode (Wi-Fi)
+airodump-ng wlan0       → Capture Wi-Fi packets
+john <file>             → Password cracking
+msfconsole              → Start Metasploit Framework
+
+------------------------------------------
+8. SYSTEM INFORMATION
+------------------------------------------
+uname -a                → Show system information
+df -h                   → Show disk usage
+du -sh <dir>            → Show folder size
+free -h                 → Show memory usage
+uptime                  → Show system running time
+
+------------------------------------------
+9. ARCHIVE AND COMPRESSION
+------------------------------------------
+tar -cvf file.tar folder/  → Create tar archive
+tar -xvf file.tar          → Extract tar archive
+zip -r file.zip folder/    → Create zip file
+unzip file.zip             → Extract zip file
+
+------------------------------------------
+10. FILE SEARCHING
+------------------------------------------
+find / -name <file>        → Search file by name
+grep "text" <file>         → Search for text inside file
+locate <filename>          → Find file location quickly
+updatedb                   → Update locate database
+
+------------------------------------------
+11. DOWNLOAD & UPLOAD COMMANDS
+------------------------------------------
+wget <URL>                 → Download file from web
+curl -O <URL>              → Download file (keep same name)
+scp file.txt user@IP:/path → Upload file to remote server
+scp user@IP:/path/file.txt . → Download from remote server
+ftp <IP>                   → Connect to FTP
+put <file>                 → Upload file (FTP)
+get <file>                 → Download file (FTP)
+
+------------------------------------------
+12. SHORTCUT KEYS
+------------------------------------------
+Ctrl + C        → Stop running command
+Ctrl + L        → Clear terminal screen
+Ctrl + R        → Search command history
+Tab             → Auto-complete
+↑ / ↓ Arrow     → Browse previous commands
+
+------------------------------------------
+
