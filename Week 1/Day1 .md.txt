@@ -1,0 +1,41 @@
+# Day 1 - Linux User and Group Basics
+
+Today I practiced some basic Linux commands to understand users and groups in Linux.
+
+## Commands I Practiced
+
+```bash
+id
+id root
+id -un
+```
+
+## What I Learned
+
+- The `id` command shows information about the current user.
+- It displays:
+  - User ID (UID)
+  - Group ID (GID)
+  - Groups the user belongs to
+
+Example:
+```bash
+uid=1000(yc127)
+gid=1000(yc127)
+```
+
+- I learned that the root user is the administrator user in Linux.
+- Root user always has UID 0.
+- `id root` shows information about the root account.
+- `id -un` displays only the current username.
+
+I also understood that Linux uses groups to manage permissions and access control.
+
+## Screenshot
+Added terminal practice screenshot in screenshots folder.
+
+## Today's Practice
+- User information
+- Root user basics
+- UID and GID
+- Linux terminal practice
