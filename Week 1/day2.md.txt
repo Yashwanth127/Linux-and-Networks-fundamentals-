@@ -1,0 +1,165 @@
+# Day 2 - Linux File Navigation and File Handling Practice
+
+Today I practiced basic Linux navigation and file handling commands in Kali Linux using the terminal.
+I focused on understanding how directories, files, and commands work practically instead of only memorizing them.
+
+
+
+## Topics I Practiced
+
+### 1. Navigation Commands
+
+Commands practiced:
+
+pwd
+cd
+cd ..
+cd ~
+
+### What I understood
+
+* pwd shows the current working directory
+* cd foldername enters a folder
+* cd .. moves one step back
+* cd ~ returns to the home directory
+
+I also understood the difference between:
+
+* /home
+* ~
+* root and user directories
+
+
+
+### 2. Listing Files and Directories
+
+Commands practiced:
+
+ls
+ls -a
+ls -l
+ls -h
+ls -r
+ls -t
+
+### What I learned
+
+* ls lists files and folders
+* ls -a shows hidden files
+* ls -l displays detailed permissions and ownership
+* ls -r reverses listing order
+* ls -t sorts by modified time
+
+I observed hidden files like:
+
+* .bashrc
+* .zshrc
+* .cache
+
+
+### 3. Creating and Editing Files
+
+Commands practiced:
+
+touch
+nano
+cat
+
+### What I learned
+
+* touch creates empty files
+* nano opens the terminal text editor
+* cat displays file contents
+
+I created files like:
+
+* file1.txt
+* file2.txt
+* file3.txt
+
+and edited content using nano.
+
+
+
+### 4. Copying Files
+
+Commands practiced:
+
+cp file1.txt file3.txt
+cp file3.txt cat/
+
+### What I learned
+
+* cp copies files
+* Files can be copied into directories
+* Copied files retain content
+
+
+
+### 5. Moving and Renaming Files
+
+Commands practiced:
+
+mv file3.txt cat/
+mv yccat_copy new_cat
+
+### What I learned
+
+* mv moves files/directories
+* mv can also rename files or folders
+
+I also understood common errors like:
+"No such file or directory"
+
+which happens when paths or filenames are incorrect.
+
+
+
+### 6. Removing Files
+
+Command practiced:
+
+rm file3.txt
+
+### What I learned
+
+* rm permanently deletes files
+* Deleted files are not moved to recycle bin in Linux terminal
+
+
+
+## Practical Understanding Gained
+
+Today helped me understand:
+
+* Linux directory structure
+* File management basics
+* Relative vs absolute paths
+* How terminal-based workflows work
+* Why Linux commands are important in cybersecurity and server environments
+
+
+
+## Commands Summary
+
+pwd
+ls
+ls -a
+ls -l
+cd
+cd ..
+cd ~
+touch
+nano
+cat
+cp
+mv
+rm
+
+
+
+## Conclusion
+
+Day 2 was focused on building comfort with the Linux terminal and understanding how file systems work practically.
+
+I practiced creating, viewing, copying, moving, renaming, and deleting files while navigating directories efficiently.
