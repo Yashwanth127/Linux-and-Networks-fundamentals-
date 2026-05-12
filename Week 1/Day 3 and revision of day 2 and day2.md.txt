@@ -44,3 +44,29 @@ rm -r
 
 Today's understanding:
 Linux gives different commands and options for managing files and directories safely. I also understood how recursive deletion works and why Linux asks confirmation in interactive mode.
+
+
+
+
+Overall Understanding Till Day 3
+
+I learned:
+
+Linux user and group basics
+File and directory navigation
+Hidden files and permissions
+Creating, editing, and viewing files
+Copying and moving files
+Renaming files and directories
+Deleting files and folders safely
+Understanding Linux terminal errors
+Difference between files and directories
+Relative and absolute paths
+
+These basics are important for:
+
+Linux administration
+Cloud computing
+DevOps
+Cybersecurity
+Server management
