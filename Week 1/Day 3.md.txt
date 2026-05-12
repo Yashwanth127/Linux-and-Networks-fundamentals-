@@ -1,0 +1,46 @@
+# Day 3 – Linux File & Directory Management Practice
+
+Today I practiced Linux file and directory management commands in Kali Linux.
+
+What I learned today:
+
+* Used `ls` command to check available files and folders.
+
+* Learned how Linux differentiates between normal files and directories.
+
+* Used `rm new.txt` to delete a normal text file.
+
+* Tried removing a directory using `rm new_cat`
+  and got the error:
+  `"cannot remove: Is a directory"`
+
+  → Learned that normal `rm` command cannot delete directories directly.
+
+* Used `rm -i file1.txt`
+
+  → Learned that `-i` means interactive mode, which asks confirmation before deleting a file.
+
+* Used `rmdir cat`
+
+  → Learned that `rmdir` only removes empty directories.
+
+* Tried `rmdir new_cat`
+
+  → Got `"Directory not empty"` error because files existed inside the folder.
+
+* Used `rm -r new_cat`
+
+  → Learned that `-r` means recursive removal and is used to delete directories along with their contents.
+
+Commands practiced today:
+
+```bash id="2h8fyz"
+ls
+rm
+rm -i
+rmdir
+rm -r
+```
+
+Today's understanding:
+Linux gives different commands and options for managing files and directories safely. I also understood how recursive deletion works and why Linux asks confirmation in interactive mode.
