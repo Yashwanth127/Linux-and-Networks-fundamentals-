@@ -1,0 +1,207 @@
+# Linux Basic Understanding Notes
+
+## What is Linux?
+
+Linux is an open-source operating system used to manage computers, servers, networks, and cloud systems.
+
+It is widely used because:
+
+* Fast
+* Secure
+* Lightweight
+* Stable
+* Free to use
+
+Linux is mostly used in:
+
+* Servers
+* Cloud computing
+* Cybersecurity
+* Networking
+* DevOps environments
+
+# Why Linux is Important
+
+Most websites and cloud servers run on Linux.
+
+Examples:
+
+* AWS EC2 servers
+* Google Cloud servers
+* Web hosting servers
+* Database servers
+
+Linux allows users to control systems using commands through the terminal.
+
+# What is Terminal in Linux?
+
+Terminal is a command-line interface used to interact with the operating system.
+
+Instead of clicking with a mouse, users type commands.
+
+Example:
+
+```bash id="k9z2qw"
+ls
+pwd
+cd
+```
+
+Using terminal helps:
+
+* Faster system management
+* Automation
+* Server administration
+* Troubleshooting
+
+# Linux File System Understanding
+
+Linux stores everything in a hierarchical structure.
+
+Important directories:
+
+```bash id="v4n8lm"
+/home
+/root
+/etc
+/bin
+/var
+```
+
+### Meaning
+
+* `/home`
+  Stores normal user files.
+
+* `/root`
+  Home directory of root administrator.
+
+* `/etc`
+  Stores configuration files.
+
+* `/bin`
+  Contains important system commands.
+
+* `/var`
+  Stores logs and variable data.
+
+# Linux Users and Permissions
+
+Linux is a multi-user operating system.
+
+Every user has:
+
+* Username
+* UID (User ID)
+* GID (Group ID)
+
+Root user:
+
+* Administrator account
+* Has full system access
+* UID is always 0
+
+Permissions help protect files and folders from unauthorized access.
+
+# Important Commands I Practiced
+
+## id
+
+Shows user and group information.
+
+## pwd
+
+Displays current working directory.
+
+## cd
+
+Changes directory.
+
+## ls
+
+Lists files and folders.
+
+## touch
+
+Creates empty files.
+
+## nano
+
+Opens text editor.
+
+## cat
+
+Displays file contents.
+
+## cp
+
+Copies files.
+
+## mv
+
+Moves or renames files.
+
+## rm
+
+Deletes files.
+
+## rmdir
+
+Deletes empty directories.
+
+# Difference Between Files and Directories
+
+## File
+
+Stores data or content.
+
+Examples:
+
+```bash id="h7m1rx"
+file1.txt
+notes.md
+```
+
+## Directory
+
+Used to organize files.
+
+Example:
+
+```bash id="t2q9ws"
+Documents/
+Downloads/
+```
+
+# Linux Errors I Understood
+
+## "No such file or directory"
+
+Occurs when filename or path is incorrect.
+
+## "Is a directory"
+
+Occurs when trying to remove folders using normal rm command.
+
+## "Directory not empty"
+
+Occurs when using rmdir on folders containing files.
+
+# What I Understood Till Now
+
+I understood that Linux is command-based and gives more control over the system compared to normal graphical operating systems.
+
+By practicing commands practically, I started understanding:
+
+* File management
+* Directory navigation
+* User permissions
+* Linux terminal workflow
+* Basic system handling
+
+These basics are important for:
+
+* Cloud computing
+* DevOps
+* Cybersecurity
+* Server administration
