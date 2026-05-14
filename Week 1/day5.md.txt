@@ -1,0 +1,57 @@
+# Day 5 - Linux File Management Practice
+
+Today I practiced some basic Linux file management commands in the terminal.
+
+First, I learned how to copy files using the `cp` command.
+
+bash
+cp ~/.zshrc ~/Desktop/zshrc-copy
+
+
+This command created a backup copy of my `.zshrc` file on the Desktop.
+
+Then I learned how to copy an entire folder using the `-r` option.
+
+bash
+cp -r ~/Code ~/Desktop
+
+
+The `-r` flag means recursive, which helps copy all files and folders inside a directory.
+
+After that, I practiced renaming files and directories using the `mv` command.
+
+bash
+mv ~/Desktop/zshrc-copy ~/Desktop/zshrc-move
+
+bash
+mv ~/Desktop/Code ~/Desktop/Code-move
+
+
+Finally, I verified everything using:
+
+bash
+ls -l ~/Desktop
+
+
+## Commands I Learned
+
+- `cp` → copy files
+- `cp -r` → copy folders/directories
+- `mv` → move or rename files
+- `ls -l` → view detailed file list
+
+## What I Understood
+
+- Linux uses simple commands for file management
+- `cp` is used for creating copies
+- `mv` can both move and rename files
+- `-r` is important when working with folders
+- Terminal commands become easier with practice
+
+## Screenshot
+
+![Day 5 Screenshot](linux-file-management-lab.png)
+
+## Conclusion
+
+Today’s practice helped me understand how file and directory management works in Linux using terminal commands.
