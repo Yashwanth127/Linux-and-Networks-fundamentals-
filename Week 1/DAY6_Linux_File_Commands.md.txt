@@ -1,0 +1,270 @@
+# DAY 6 - Linux File Content & Comparison Commands
+
+Today I practiced Linux commands related to reading file contents, viewing specific linescharacters, and comparing files.
+
+These commands are very useful in Linux administration, cybersecurity, cloud, and networking environments.
+
+---
+
+# 1. cat Command
+
+Used to display full file content.
+
+## Syntax
+```bash
+cat filename
+```
+
+## Example
+```bash
+cat tmphello
+```
+
+## Output
+```bash
+Hi,
+I am Labby!
+```
+
+---
+
+# 2. cat -n Command
+
+Displays file content with line numbers.
+
+## Syntax
+```bash
+cat -n filename
+```
+
+## Example
+```bash
+cat -n tmphello
+```
+
+## Output
+```bash
+1  Hi,
+2  I am Labby!
+```
+
+---
+
+# 3. head Command
+
+Used to display the beginning lines of a file.
+
+## Syntax
+```bash
+head filename
+```
+
+## Example
+```bash
+head tmphello
+```
+
+---
+
+# 4. head -n1 Command
+
+Displays only the first line of the file.
+
+## Syntax
+```bash
+head -n1 filename
+```
+
+## Example
+```bash
+head -n1 tmphello
+```
+
+## Output
+```bash
+Hi,
+```
+
+---
+
+# 5. head -c1 Command
+
+Displays only the first character from the file.
+
+## Syntax
+```bash
+head -c1 filename
+```
+
+## Example
+```bash
+head -c1 tmphello
+```
+
+## Output
+```bash
+H
+```
+
+---
+
+# 6. tail Command
+
+Used to display the last lines of a file.
+
+## Syntax
+```bash
+tail filename
+```
+
+## Example
+```bash
+tail tmphello
+```
+
+---
+
+# 7. tail -n1 Command
+
+Displays only the last line from the file.
+
+## Syntax
+```bash
+tail -n1 filename
+```
+
+## Example
+```bash
+tail -n1 tmphello
+```
+
+## Output
+```bash
+I am Labby!
+```
+
+---
+
+# 8. tail -c1 Command
+
+Displays the last character of the file.
+
+## Syntax
+```bash
+tail -c1 filename
+```
+
+---
+
+# 9. tail -c2 Command
+
+Displays the last 2 characters from the file.
+
+## Example
+```bash
+tail -c2 tmphello
+```
+
+---
+
+# 10. touch Command
+
+Used to create empty files.
+
+## Syntax
+```bash
+touch filename
+```
+
+## Example
+```bash
+touch yc1.txt
+```
+
+---
+
+# 11. nano Command
+
+Used to open and edit files inside terminal.
+
+## Syntax
+```bash
+nano filename
+```
+
+## Example
+```bash
+nano yc1.txt
+```
+
+---
+
+# 12. diff Command
+
+Used to compare two files and show differences.
+
+## Syntax
+```bash
+diff file1 file2
+```
+
+## Example
+```bash
+diff yc.txt yc1.txt
+```
+
+## Meaning of Symbols
+
+```bash
+  = content from first file
+  = content from second file
+```
+
+---
+
+# 13. diff -r Command
+
+Used to compare directories recursively.
+
+## Syntax
+```bash
+diff -r dir1 dir2
+```
+
+## Example
+```bash
+diff -r ~Desktop ~Code
+```
+
+---
+
+# What I Learned Today
+
+- Reading file contents using cat
+- Viewing line numbers
+- Checking first and last lines
+- Checking first and last characters
+- Creating files
+- Editing files using nano
+- Comparing files using diff
+- Understanding file differences
+- Basic Linux file handling practice
+
+---
+
+# Real Time Usage
+
+These commands are heavily used in
+
+- Linux Administration
+- Cybersecurity
+- SOC Analysis
+- Cloud Engineering
+- DevOps
+- Networking
+- Log Analysis
+- Server Troubleshooting
+
+---
+
+# Practice Completed Successfully
