@@ -1,0 +1,123 @@
+# Day 1 — Linux File Permissions Practice
+
+Today I practiced Linux file permissions in Kali Linux.
+
+First I learned how to check permissions using:
+
+```bash
+ls -l
+
+
+This command shows:
+
+file permissions
+owner
+group
+file size
+
+I understood:
+
+r = read
+w = write
+x = execute
+
+Example:
+
+-rwxr-xr--
+
+means:
+
+owner has full access
+group can read and execute
+others can only read
+
+Then I practiced chmod command.
+
+chmod means:
+
+change file permissions
+
+
+Commands I tried:
+
+chmod u+x yc1.txt
+
+This adds execute permission for the user.
+
+chmod g-w yc1.txt
+
+This removes write permission from group.
+
+chmod o+r yc1.txt
+
+This gives read permission to others.
+
+Then I learned numeric permissions.
+
+4 = read
+2 = write
+1 = execute
+
+Examples:
+
+7 = rwx
+6 = rw-
+5 = r-x
+
+Commands I practiced:
+
+chmod 777 yc1.txt
+chmod 755 yc1.txt
+chmod 700 yc1.txt
+
+What I understood:
+
+777 = everyone gets full access
+755 = owner full access, others can read and execute
+700 = only owner can access
+
+Then I tried to execute a text file:
+
+./yc3.txt
+
+but I got an error.
+
+I understood the reason:
+
+Linux cannot execute plain text files directly.
+
+Then I learned how to create a real bash script.
+
+I created a file using:
+
+nano test.sh
+
+Inside the file I added:
+
+#!/bin/bash
+
+echo "Hello Linux"
+
+Then I gave execute permission:
+
+chmod +x test.sh
+
+Finally I executed the script:
+
+./test.sh
+
+Output:
+
+Hello Linux
+
+Today I learned:
+
+Linux file permissions
+chmod command
+numeric permissions
+execute permissions
+difference between text file and bash script
+how to run bash scripts in Kali Linux
+
+
+
