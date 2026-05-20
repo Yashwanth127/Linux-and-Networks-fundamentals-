@@ -1,0 +1,251 @@
+# Linux Week 2 Practice Notes
+
+Date: 20 May 2026
+
+Today I practiced Linux permissions, ownership, folders, and some file handling commands.
+
+## Creating a File
+
+```bash
+touch example.txt
+```
+
+This command created an empty file named `example.txt`.
+
+To check the file:
+
+```bash
+ls
+```
+
+Output showed:
+
+```bash
+example.txt
+```
+
+## Checking File Permissions
+
+```bash
+ls -l example.txt
+```
+
+Output:
+
+```bash
+-rw-rw-r-- 1 yc127 yc127 0 May 20 05:40 example.txt
+```
+
+What I understood:
+
+* `rw-` = owner permissions
+* `rw-` = group permissions
+* `r--` = others permissions
+
+Meaning:
+
+* owner can read and write
+* group can read and write
+* others can only read
+
+## Changing File Owner
+
+First I tried:
+
+```bash
+sudo chown yash:hari example.txt
+```
+
+It gave an error because that user/group did not exist.
+
+Then I changed ownership successfully:
+
+```bash
+sudo chown root:root example.txt
+```
+
+Checking again:
+
+```bash
+ls -l example.txt
+```
+
+Output:
+
+```bash
+-rw-rw-r-- 1 root root 0 May 20 05:40 example.txt
+```
+
+Now the owner and group became `root`.
+
+## Creating Directories
+
+```bash
+mkdir -p new-dir/subdir
+```
+
+This created:
+
+* `new-dir`
+* `subdir` inside it
+
+Checking:
+
+```bash
+ls
+```
+
+Then:
+
+```bash
+cd new-dir
+ls
+```
+
+Output:
+
+```bash
+subdir
+```
+
+## Creating a File with echo
+
+I first tried:
+
+```bash
+echo "Hello , linux" > new-dir/file.txt
+```
+
+It gave:
+
+```bash
+No such file or directory
+```
+
+Reason:
+
+I was already inside `new-dir`, so writing `new-dir/file.txt` was incorrect.
+
+Correct command would be:
+
+```bash
+echo "Hello , linux" > file.txt
+```
+
+## Changing Ownership Recursively
+
+Wrong command I tried:
+
+```bash
+sudo -R root-root new-dir
+```
+
+Correct command:
+
+```bash
+sudo chown -R root:root new-dir
+```
+
+What I learned:
+
+* `-R` means recursive
+* it changes ownership for all files and folders inside
+
+Checking:
+
+```bash
+ls -lR new-dir
+```
+
+Output showed:
+
+```bash
+file.txt
+subdir
+file2.txt
+```
+
+All owned by root.
+
+## Changing Permissions
+
+Checking current permissions:
+
+```bash
+ls -l common.txt
+```
+
+Then changing permissions:
+
+```bash
+sudo chmod 700 common.txt
+```
+
+Checking again:
+
+```bash
+ls -l common.txt
+```
+
+Output:
+
+```bash
+-rwx------
+```
+
+Meaning of 700:
+
+* owner = rwx
+* group = ---
+* others = ---
+
+Permission number understanding:
+
+```text
+r = 4
+w = 2
+x = 1
+```
+
+Examples:
+
+```text
+7 = rwx
+6 = rw-
+5 = r-x
+4 = r--
+```
+
+## Things I Practiced Today
+
+* touch
+* ls
+* ls -l
+* mkdir -p
+* cd
+* echo
+* chmod
+* chown
+* recursive ownership
+* Linux permissions
+
+## Mistakes I Made and Learned From
+
+1. Wrong user/group in chown
+2. Wrong file path while already inside a directory
+3. Wrong syntax for recursive ownership command
+
+These mistakes helped me understand Linux commands better.
+
+## My Understanding After Practice
+
+Today I understood:
+
+* how Linux permissions work
+* how ownership works
+* difference between users and groups
+* how to create folders and files
+* how recursive commands work
+* why path matters in Linux
+
+Practice is making commands easier to remember.
