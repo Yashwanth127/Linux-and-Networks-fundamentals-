@@ -1,0 +1,140 @@
+# Day 6 — Linux Permissions & Bash Script Practice
+
+Today I practiced Linux file permissions and basic bash scripting in Kali Linux.
+
+I started by creating files and folders using:
+
+```bash
+mkdir project
+touch notes.txt
+touch private.txt
+touch script.txt
+```
+
+Then I checked permissions using:
+
+```bash
+ls -l
+```
+
+I understood:
+
+- `r` = read
+- `w` = write
+- `x` = execute
+
+I also understood permission groups:
+
+- owner
+- group
+- others
+
+---
+
+Today I practiced `chmod` command.
+
+Commands I used:
+
+```bash
+chmod 700 private.txt
+chmod 644 notes.txt
+chmod +x yc.sh
+chmod -x file2.txt
+```
+
+What I understood:
+
+- `700` = only owner can access
+- `644` = owner can read/write, others can only read
+- `+x` = give execute permission
+- `-x` = remove execute permission
+
+---
+
+I also learned that Linux cannot execute normal text files directly.
+
+When I tried:
+
+```bash
+./yc.sh
+```
+
+I got:
+
+```text
+permission denied
+```
+
+Then I understood execute permission was missing.
+
+I fixed it using:
+
+```bash
+chmod +x yc.sh
+```
+
+---
+
+I also got another error:
+
+```text
+unterminated quote string
+```
+
+I understood this happens when quotes are not closed properly.
+
+Wrong example:
+
+```bash
+echo "welcome
+```
+
+Correct example:
+
+```bash
+echo "welcome"
+```
+
+---
+
+Then I created a real bash script using:
+
+```bash
+nano yc.sh
+```
+
+Inside the script I added:
+
+```bash
+#!/bin/bash
+
+echo "welcome"
+echo "i am learning Bash scripting"
+```
+
+Then I executed it successfully using:
+
+```bash
+./yc.sh
+```
+
+Output:
+
+```text
+welcome
+i am learning Bash scripting
+```
+
+---
+
+Today I learned:
+
+- Linux file permissions
+- chmod command
+- execute permissions
+- bash scripting basics
+- fixing permission denied errors
+- fixing quote errors
+- executing `.sh` files successfully
+
+Today was a very good hands-on Linux practice session 🔥
