@@ -1,0 +1,288 @@
+# Day 6 - Linux File Permissions, Ownership and File Viewing Commands
+
+Today I practiced Linux file permissions, ownership, file viewing commands, and basic Bash scripting in Kali Linux.
+
+---
+
+## File Permissions
+
+I learned how to check file permissions using:
+
+```bash
+ls -l
+```
+
+Example:
+
+```text
+-rwxr-xr--
+```
+
+Permission meanings:
+
+- r = Read
+- w = Write
+- x = Execute
+
+Permission groups:
+
+- Owner
+- Group
+- Others
+
+---
+
+## chmod Command
+
+The chmod command is used to change file permissions.
+
+Examples:
+
+```bash
+chmod +x yc.sh
+chmod -x file2.txt
+chmod 700 private.txt
+chmod 644 notes.txt
+chmod 755 script.sh
+```
+
+What I learned:
+
+- 777 = Full access for everyone
+- 755 = Owner full access, others can read and execute
+- 700 = Only owner can access
+- 644 = Owner can read/write, others can only read
+
+---
+
+## Ownership and chown
+
+I learned that every file has an owner and a group.
+
+To check ownership:
+
+```bash
+ls -l
+```
+
+Example:
+
+```text
+-rw-r--r-- 1 yc127 yc127 numbers.txt
+```
+
+Owner:
+
+```text
+yc127
+```
+
+Current logged-in user:
+
+```bash
+whoami
+```
+
+To change ownership:
+
+```bash
+sudo chown root numbers.txt
+```
+
+To change owner and group:
+
+```bash
+sudo chown root:root numbers.txt
+```
+
+I learned that ownership is important for Linux security and access control.
+
+---
+
+## cat Command
+
+Used to display the complete contents of a file.
+
+```bash
+cat numbers.txt
+```
+
+Example output:
+
+```text
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+---
+
+## head Command
+
+Used to display the first lines of a file.
+
+```bash
+head numbers.txt
+```
+
+Display first 5 lines:
+
+```bash
+head -5 numbers.txt
+```
+
+---
+
+## tail Command
+
+Used to display the last lines of a file.
+
+```bash
+tail numbers.txt
+```
+
+Display last 5 lines:
+
+```bash
+tail -5 numbers.txt
+```
+
+---
+
+## less Command
+
+Used to read large files page by page.
+
+```bash
+less numbers.txt
+```
+
+Useful keys:
+
+- Space = Next page
+- b = Previous page
+- /word = Search
+- q = Quit
+
+---
+
+## diff Command
+
+Used to compare two files.
+
+```bash
+diff numbers.txt numbers2.txt
+```
+
+Shows the differences between files.
+
+---
+
+## Bash Scripting
+
+I created and executed a Bash script.
+
+Script:
+
+```bash
+#!/bin/bash
+
+echo "welcome"
+echo "i am learning Bash scripting"
+```
+
+Make executable:
+
+```bash
+chmod +x yc.sh
+```
+
+Execute:
+
+```bash
+./yc.sh
+```
+
+Output:
+
+```text
+welcome
+i am learning Bash scripting
+```
+
+---
+
+## Errors I Fixed
+
+### Permission Denied
+
+Error:
+
+```text
+zsh: permission denied: ./yc.sh
+```
+
+Solution:
+
+```bash
+chmod +x yc.sh
+```
+
+Reason:
+
+The file did not have execute permission.
+
+---
+
+### Unterminated Quote String
+
+Wrong:
+
+```bash
+echo "welcome
+```
+
+Correct:
+
+```bash
+echo "welcome"
+```
+
+Reason:
+
+The quotation mark was not closed properly.
+
+---
+
+## Commands Practiced Today
+
+```bash
+ls -l
+whoami
+chmod +x yc.sh
+chmod -x file2.txt
+chmod 700 private.txt
+chmod 644 notes.txt
+cat numbers.txt
+head -5 numbers.txt
+tail -5 numbers.txt
+less numbers.txt
+diff numbers.txt numbers2.txt
+sudo chown root numbers.txt
+./yc.sh
+```
+
+---
+
+## Conclusion
+
+Today I practiced Linux file permissions, ownership management, file viewing commands, and basic Bash scripting. I learned how to manage access to files, compare files, view file contents efficiently, and execute shell scripts in Linux.
+
+This practice helped strengthen my Linux fundamentals for Cloud Computing, DevOps, and Cybersecurity learning.
