@@ -1,0 +1,35 @@
+ip a
+
+This command shows all network interfaces and their IP addresses.
+
+lo is the loopback interface with IP 127.0.0.1, used for internal communication inside your own machine.
+
+eth0 is your main network card. It has a private IP address like 192.168.11.231/24, which is used inside your local network (for example, your home Wi‑Fi or LAN).
+
+ping google.com
+
+This command sends ICMP echo requests to google.com to check if you have Internet connectivity.
+
+The replies show the time in milliseconds for each packet.
+
+At the end, it shows statistics: how many packets were sent, how many were received, packet loss (here 20%), and the minimum/average/maximum round‑trip time. Even with some packet loss, the replies prove that the Internet connection is working.
+
+hostname
+
+This command prints the name of your computer on the network.
+
+The value shown (for example, yc127) is how your machine identifies itself in the local network.
+
+curl ifconfig.me (first attempt)
+
+curl is a tool to make web requests from the terminal.
+
+ifconfig.me is a website that returns your public IP address.
+
+The error Could not resolve host: ifconfig.me means DNS resolution failed at that moment (your system could not convert the domain name into an IP address).
+
+curl ifconfig.me (second attempt)
+
+Running the same command again succeeded and printed your public IP address.
+
+This public IP is the address that websites on the Internet see when you connect (it’s usually assigned by your ISP or router and is different from your private IP shown by ip a).
