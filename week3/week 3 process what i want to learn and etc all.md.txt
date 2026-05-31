@@ -1,0 +1,193 @@
+# Linux Week 3 Roadmap
+
+Focus Topics:
+
+1. Processes and Process Management
+2. systemctl and Services
+3. SSH Basics
+4. Cron Jobs
+5. Logs and Monitoring
+6. Environment Variables
+7. Disk Usage and Memory Commands
+8. More Bash Practice
+
+--------------------------------------------------
+
+# 1. Processes and Process Management
+
+Learn:
+- what a process is
+- running processes
+- stopping processes
+
+Commands:
+
+ps aux
+top
+htop
+kill
+kill -9
+
+Practice:
+- check running processes
+- stop a process
+- understand PID
+
+--------------------------------------------------
+
+# 2. systemctl and Services
+
+Learn:
+- Linux services
+- starting/stopping services
+- checking service status
+
+Commands:
+
+systemctl status ssh
+sudo systemctl start ssh
+sudo systemctl stop ssh
+sudo systemctl restart ssh
+sudo systemctl enable ssh
+
+Understand:
+- background services
+- daemon concept
+
+--------------------------------------------------
+
+# 3. SSH Basics
+
+Learn:
+- remote login
+- secure shell basics
+
+Commands:
+
+ssh user@ip-address
+ssh localhost
+
+Practice:
+- local SSH connection
+- understand authentication
+
+--------------------------------------------------
+
+# 4. Cron Jobs
+
+Learn:
+- task scheduling
+- automatic command execution
+
+Commands:
+
+crontab -e
+crontab -l
+
+Example:
+
+* * * * * echo "Hello" >> test.txt
+
+Understand:
+- minute
+- hour
+- day
+- automatic scheduling
+
+--------------------------------------------------
+
+# 5. Logs and Monitoring
+
+Learn:
+- system logs
+- monitoring errors
+
+Commands:
+
+journalctl
+dmesg
+tail /var/log/syslog
+tail -f file.txt
+
+Practice:
+- view live logs
+- understand log updates
+
+--------------------------------------------------
+
+# 6. Environment Variables
+
+Learn:
+- shell variables
+- environment variables
+
+Commands:
+
+echo $HOME
+echo $PATH
+env
+
+Create variable:
+
+name="Linux"
+
+Print variable:
+
+echo $name
+
+--------------------------------------------------
+
+# 7. Disk Usage and Memory Commands
+
+Learn:
+- storage usage
+- RAM usage
+
+Commands:
+
+df -h
+du -sh *
+free -h
+
+Understand:
+- disk space
+- memory usage
+
+--------------------------------------------------
+
+# 8. Bash Practice Continue
+
+Practice:
+- variables
+- loops
+- conditions
+- executable scripts
+
+Example:
+
+#!/bin/bash
+
+name="Linux"
+
+if [ $name = "Linux" ]
+then
+ echo "Correct"
+fi
+
+--------------------------------------------------
+
+# Week 3 Goal
+
+By end of Week 3 I should understand:
+
+- Linux process management
+- services and systemctl
+- SSH basics
+- cron jobs
+- logs
+- environment variables
+- disk and memory usage
+- better bash scripting
+
+--------------------------------------------------
+
