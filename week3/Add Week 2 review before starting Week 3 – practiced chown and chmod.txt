@@ -1,0 +1,8 @@
+Before moving on to Week 3 learning, I practiced and reviewed these core Linux commands:
+
+- Created a file: touch target_file  
+- Changed file owner and group: sudo chown user1:group1 target_file  
+- Changed file permissions: sudo chmod 760 target_file  
+- Verified ownership and permissions: ls -l target_file  
+
+This reinforced my understanding of file ownership (chown) and permissions (chmod) in Linux.
