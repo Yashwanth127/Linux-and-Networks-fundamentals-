@@ -1,0 +1,124 @@
+=============================
+WEEK 3 - PROCESS MANAGEMENT
+=============================
+
+What is a Process?
+------------------
+A process is a program that is currently running in the system.
+
+Examples:
+- Google Chrome
+- Firefox
+- VS Code
+- Terminal
+
+When any application is opened, it becomes a process.
+
+Every process has:
+- Process ID (PID)
+- Memory usage
+- CPU usage
+- Current state
+- Priority
+
+---------------------------------
+
+What is Process Management?
+---------------------------
+Process Management is the way Linux controls and manages running programs.
+
+Linux performs the following tasks:
+- Creates processes
+- Schedules processes
+- Monitors processes
+- Stops processes
+- Allocates CPU and memory
+- Manages priorities
+
+Process management helps the system run multiple applications efficiently.
+
+---------------------------------
+
+Why is Process Management Important?
+------------------------------------
+- Monitor system performance
+- Identify high CPU or memory usage
+- Stop unwanted programs
+- Improve system efficiency
+- Manage system resources
+- Keep the system stable
+
+---------------------------------
+
+Process States
+--------------
+1. Running
+   The process is currently using the CPU.
+
+2. Ready
+   The process is waiting for CPU time.
+
+3. Sleeping
+   The process is waiting for input or an event.
+
+4. Stopped
+   The process has been paused.
+
+5. Zombie
+   The process has finished but still exists in the process table.
+
+---------------------------------
+
+What is PID?
+------------
+PID stands for Process ID.
+
+Every running process has a unique PID number.
+
+Example:
+Chrome    -> PID 2345
+VS Code   -> PID 5678
+Terminal  -> PID 9012
+
+Linux uses the PID to identify and manage processes.
+
+---------------------------------
+
+Process Priority
+----------------
+Not all processes are equally important.
+
+Linux assigns priorities to processes.
+
+Higher priority processes get CPU time before lower priority processes.
+
+This helps important system tasks run smoothly.
+
+---------------------------------
+
+Real Life Example
+-----------------
+Think of a company office.
+
+Employees = Processes
+Employee ID = PID
+Manager = Operating System
+Office Resources = CPU and Memory
+
+The manager decides:
+- Who works first
+- Who waits
+- Who gets more resources
+- Who stops working
+
+This is similar to how Linux manages processes.
+
+---------------------------------
+
+Conclusion
+----------
+A process is a running program.
+
+Process Management is the mechanism Linux uses to create, monitor, schedule, prioritize, and terminate processes.
+
+It is an important concept for Linux Administration, Cloud Computing, DevOps, Cybersecurity, and System Administration.
