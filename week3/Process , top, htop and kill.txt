@@ -1,0 +1,17 @@
+Process = what is running ,example chrome ,some text documents etc ,
+
+PS  p
+ps aux
+shows how much usage of CPU , memory Users etc and all 
+
+
+top shows current working process and live moniterning
+cmds top
+
+htop
+same but better UI 
+easy to read 
+colours
+
+Kill process
+used to remove or delete  the process
