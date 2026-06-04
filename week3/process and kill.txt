@@ -1,0 +1,191 @@
+=============================
+WEEK 3 - PROCESS MANAGEMENT
+=============================
+
+1. What is a Process?
+---------------------
+A process is a program that is currently running in the system.
+
+Examples:
+- Chrome
+- Firefox
+- VS Code
+- Terminal
+
+Each running program gets a unique Process ID (PID).
+
+---------------------------------
+
+2. What is Process Management?
+------------------------------
+Process Management is the way Linux manages running programs.
+
+Linux can:
+- Start processes
+- Monitor processes
+- Stop processes
+- Manage CPU usage
+- Manage process priorities
+
+---------------------------------
+
+3. ps Command
+-------------
+ps stands for Process Status.
+
+It is used to view running processes.
+
+Example:
+ps
+
+Shows processes running in the current terminal session.
+
+---------------------------------
+
+4. ps aux Command
+-----------------
+ps aux shows detailed information about all running processes.
+
+Information includes:
+- User
+- PID
+- CPU usage
+- Memory usage
+- Running command
+
+Think of it as a complete process list.
+
+---------------------------------
+
+5. grep Command
+---------------
+grep is used to search for a word or pattern.
+
+Example:
+ps aux | grep sleep
+
+This searches all running processes and shows only the processes containing the word "sleep".
+
+---------------------------------
+
+6. ps aux | grep sleep
+----------------------
+This command has two parts:
+
+ps aux
+Shows all processes.
+
+grep sleep
+Searches for the word "sleep".
+
+Output may show:
+
+sleep 500
+grep sleep
+
+The first line is the actual process.
+
+The second line is the grep command itself.
+
+---------------------------------
+
+7. PID (Process ID)
+-------------------
+PID stands for Process ID.
+
+Every process gets a unique number.
+
+Example:
+
+PID 4939 -> sleep process
+PID 1250 -> Firefox
+PID 2000 -> VS Code
+
+Linux uses the PID to identify processes.
+
+---------------------------------
+
+8. kill Command
+---------------
+Used to stop a running process.
+
+Example:
+
+kill 4939
+
+This sends a termination signal to the process with PID 4939.
+
+---------------------------------
+
+9. kill -9 Command
+------------------
+Used to forcefully stop a process.
+
+Example:
+
+kill -9 4939
+
+Used when a normal kill does not work.
+
+---------------------------------
+
+10. top Command
+---------------
+top shows running processes in real time.
+
+It displays:
+- CPU usage
+- Memory usage
+- Running processes
+- System load
+
+Similar to Windows Task Manager.
+
+Press q to exit.
+
+---------------------------------
+
+11. htop Command
+----------------
+htop is an improved version of top.
+
+Features:
+- Colorful interface
+- Easy navigation
+- Better process monitoring
+- Interactive controls
+
+htop is easier to read than top.
+
+---------------------------------
+
+12. Difference Between top and htop
+-----------------------------------
+
+top
+- Installed by default
+- Basic interface
+- Keyboard only
+
+htop
+- May need installation
+- Colorful interface
+- More user-friendly
+- Easier process management
+
+---------------------------------
+
+Summary
+-------
+Today I learned:
+- What a process is
+- What process management means
+- Process ID (PID)
+- ps command
+- ps aux command
+- grep command
+- kill command
+- kill -9 command
+- top command
+- htop command
+- Basic process monitoring and termination in Linux
