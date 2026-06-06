@@ -189,3 +189,33 @@ Today I learned:
 - top command
 - htop command
 - Basic process monitoring and termination in Linux
+
+
+
+
+
+# 1. Start multiple test processes
+sleep 600 &      # PID will be assigned
+sleep 600 &      # Another process
+python3 -c "while True: pass" &  # Infinite Python loop
+
+# 2. List all your background processes
+jobs -l
+
+# 3. Find PIDs using ps
+ps aux | grep -E "(sleep|python)" | grep -v grep
+
+# 4. Monitor with top (press 'q' to quit after 10 seconds)
+timeout 10 top
+
+# 5. Kill the first sleep process (replace PID with actual number)
+ps aux | grep "sleep 600" | grep -v grep | awk '{print $2}' | head -1 | xargs kill
+
+# 6. Force kill the Python process
+ps aux | grep "python3 -c" | grep -v grep | awk '{print $2}' | xargs kill -9
+
+# 7. Kill all remaining sleep processes
+pkill -9 sleep
+
+# 8. Verify cleanup
+ps aux | grep -E "(sleep|python)" | grep -v grep
