@@ -1,0 +1,212 @@
+# Week 3 - Linux Process Management Revision Notes
+
+## What is a Process?
+
+A process is a running instance of a program.
+
+Examples:
+
+* Firefox running
+* VS Code running
+* Terminal running
+
+Each process has a unique Process ID (PID).
+
+---
+
+## Why Process Management is Important?
+
+Process management helps us:
+
+* Monitor running programs
+* Check CPU and memory usage
+* Find problematic applications
+* Stop unresponsive processes
+* Manage background services
+
+---
+
+## Commands Practiced
+
+### 1. ps
+
+Display processes running in the current terminal.
+
+```bash
+ps
+```
+
+Example Output:
+
+```bash
+PID TTY          TIME CMD
+2613 pts/0    00:00:00 zsh
+2656 pts/0    00:00:00 ps
+```
+
+---
+
+### 2. ps aux
+
+Display all running processes.
+
+```bash
+ps aux
+```
+
+Useful for:
+
+* Viewing all processes
+* Finding CPU-heavy processes
+* Finding memory-heavy processes
+* Locating specific applications
+
+---
+
+### 3. grep
+
+Filter command output.
+
+```bash
+ps aux | grep sleep
+```
+
+Example:
+
+```bash
+yc127 4939 ... sleep 500
+```
+
+Used to find a specific process.
+
+---
+
+### 4. kill
+
+Terminate a process gracefully.
+
+```bash
+kill 4939
+```
+
+The process receives a termination signal and can exit cleanly.
+
+---
+
+### 5. kill -9
+
+Force terminate a process.
+
+```bash
+kill -9 4939
+```
+
+Used when a process does not respond to a normal kill command.
+
+---
+
+### 6. top
+
+Monitor system performance in real time.
+
+```bash
+top
+```
+
+Shows:
+
+* CPU usage
+* Memory usage
+* Running processes
+* System load
+
+Press:
+
+```bash
+q
+```
+
+to quit.
+
+---
+
+### 7. htop
+
+Improved version of top.
+
+```bash
+htop
+```
+
+Features:
+
+* Interactive interface
+* Easier process management
+* Better visualization
+
+---
+
+## Hands-on Practice Performed
+
+### Create a Test Process
+
+```bash
+sleep 500
+```
+
+### Find Process
+
+```bash
+ps aux | grep sleep
+```
+
+### Terminate Process
+
+```bash
+kill <PID>
+```
+
+### Force Terminate Process
+
+```bash
+kill -9 <PID>
+```
+
+### Monitor System
+
+```bash
+top
+```
+
+---
+
+## Key Concepts Learned
+
+* Process
+* PID (Process ID)
+* Process Monitoring
+* Process Termination
+* CPU Usage
+* Memory Usage
+* System Load
+* Real-Time Monitoring
+
+---
+
+## Summary
+
+This week I learned Linux Process Management.
+
+I practiced:
+
+* ps
+* ps aux
+* grep
+* kill
+* kill -9
+* top
+* htop
+
+I also learned how to identify running processes, monitor system resources, and terminate processes using their PID.
+
+Learning Linux through hands-on practice is helping me understand how operating systems manage programs and resources.
