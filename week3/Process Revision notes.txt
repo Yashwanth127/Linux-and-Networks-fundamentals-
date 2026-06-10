@@ -207,6 +207,19 @@ I practiced:
 * top
 * htop
 
-I also learned how to identify running processes, monitor system resources, and terminate processes using their PID.
+Practice Order Today
+ps
+ps aux
+top
+htop
+sleep 300
+ps aux | grep sleep
+pgrep sleep
+pidof sleep
+kill PID
+sleep 300 &
+jobs
+killall sleep
+kill -L
 
-Learning Linux through hands-on practice is helping me understand how operating systems manage programs and resources.
+
