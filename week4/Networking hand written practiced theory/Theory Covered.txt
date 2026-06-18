@@ -1,0 +1,10 @@
+## Theory Covered
+
+- Networking Fundamentals
+- IP Addressing
+- DNS
+- TCP vs UDP
+- OSI Model
+- Network Types
+- Network Devices
+- Network Topologies
