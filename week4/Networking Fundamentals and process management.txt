@@ -1,0 +1,59 @@
+Week 4 - Networking Fundamentals & Process Management
+
+Topics Covered
+
+Networking Fundamentals
+
+ Networking Basics
+IP Address
+ Public vs Private IP
+ DNS (Domain Name System)
+TCP vs UDP
+ OSI Model
+ Network Types (LAN, MAN, WAN, PAN)
+ Network Devices (Router, Switch, Hub, Modem, Access Point)
+ Network Topologies
+
+Process Management
+
+ nice
+ renice
+ bg
+ fg
+ jobs
+ nohup
+
+
+
+ Practical Commands Practiced
+
+bash
+ip a
+hostname -I
+ip route
+cat /etc/resolv.conf
+nslookup google.com
+ping google.com
+
+nice -n 10 sleep 300
+renice 10 -p PID
+jobs
+bg
+fg
+nohup sleep 300 &
+
+ Files Included
+
+ Theory Notes
+ Command Screenshots
+ Networking Fundamentals Notes
+Process Management Practice
+
+ Learning Outcome
+
+Understood basic networking concepts
+ Learned IP addressing and DNS
+ Understood TCP vs UDP
+ Learned OSI Model basics
+ Practiced Linux process management
+ Worked with foreground and background jobs
