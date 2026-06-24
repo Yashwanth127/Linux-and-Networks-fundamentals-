@@ -1,0 +1,40 @@
+# Wireshark Packet Analysis Practice
+
+## Date
+
+24 June 2026
+
+## What I Did Today
+
+Today I practiced network traffic analysis using Wireshark on Kali Linux running inside VMware Workstation.
+
+I started a live packet capture on the `eth0` interface and applied a filter to view traffic destined for a specific IP address:
+
+ip.dst == 151.101.129.91
+
+During the capture, I observed multiple protocols including:
+
+* TCP
+* TLSv1.2
+* TLSv1.3
+* ARP
+* ICMPv6
+
+I examined packet details such as source and destination IP addresses, port numbers, sequence numbers, acknowledgement numbers, and packet lengths.
+
+## What I Learned
+
+* How to start and monitor a live packet capture.
+* How to use display filters in Wireshark.
+* Basic understanding of TCP communication.
+* How TLS traffic appears in packet captures.
+* The role of ARP in local network communication.
+* How to inspect packet details for troubleshooting and analysis.
+
+## Screenshot
+
+Attached Wireshark screenshot showing live packet capture and filtered network traffic.
+
+## Conclusion
+
+This practice session helped me improve my understanding of network traffic analysis and packet inspection using Wireshark. I became more familiar with common networking protocols and learned how to filter and analyze packets effectively.
