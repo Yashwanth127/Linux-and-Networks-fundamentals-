@@ -1,0 +1,80 @@
+Linux job control helps you manage commands running in the terminal. It lets you move tasks between foreground and background, check running jobs, and stop or resume them.
+
+Foreground and background
+Foreground means the command is taking over the terminal.
+
+Background means the command runs while you keep using the terminal.
+
+Commands
+& runs a command in the background.
+
+jobs shows background or stopped jobs in the current terminal session.
+
+fg brings a job to the foreground.
+
+bg continues a stopped job in the background.
+
+Example
+bash
+sleep 300 &
+jobs
+fg %1
+bg %1
+Process priority
+Linux can give some processes more or less CPU preference. This is controlled by the niceness value. Lower niceness means higher priority, and higher niceness means lower priority.
+
+Commands
+nice -n 10 sleep 300 starts a new process with lower priority.
+
+renice 10 -p PID changes the priority of an already running process.
+
+Example
+bash
+nice -n 10 sleep 300
+ps aux | grep sleep
+renice 10 -p 1234
+Finding processes
+ps aux | grep sleep is used to search for a running process by name. ps aux shows processes, and grep sleep filters the result to lines containing sleep. 
+
+Keeping jobs running
+nohup sleep 300 & runs a command in the background and keeps it running even if the terminal closes. nohup protects the job from the hangup signal sent when the session ends.
+
+Example
+bash
+nohup sleep 300 &
+IP addressing
+An IP address is like a device’s address on a network. It helps data know where to go and where to come back from.
+
+Main types
+IPv4 uses addresses like 192.168.1.10.
+
+IPv6 is the newer format and supports many more devices.
+
+Public and private IP
+Public IP is seen on the internet.
+
+Private IP is used inside a local network like home Wi‑Fi.
+
+Quick example
+bash
+curl ifconfig.me
+This shows your public IP address.
+
+Tiny cheat sheet
+sleep 300 & = run in background.
+
+jobs = list jobs.
+
+fg = bring to front.
+
+bg = send to back.
+
+nice = set priority when starting.
+
+renice = change priority later.
+
+ps aux | grep = find process.
+
+nohup = keep running after terminal closes.
+
+IP address = network address of a device.
