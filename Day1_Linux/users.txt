@@ -1,0 +1,55 @@
+## Quick Memory
+
+pwd
+→ Shows where I am.
+
+ls
+→ Shows files and folders.
+
+ls -l
+→ Shows detailed file information.
+
+ls -a
+→ Shows hidden files.
+
+ls -la
+→ Shows hidden files + detailed information.
+
+cd
+→ Changes directory.
+
+mkdir
+→ Creates a directory.
+
+touch
+→ Creates an empty file.
+
+cat
+→ Displays file contents.
+
+less
+→ Reads a file page by page.
+
+cp
+→ Copies files/folders.
+
+mv
+→ Moves or renames files/folders.
+
+rm
+→ Deletes files/folders.
+
+find
+→ Searches for files/folders.
+
+grep
+→ Searches for text.
+
+|
+→ Connects two commands.
+
+>
+→ Writes/overwrites a file.
+
+>>
+→ Appends to a file.
